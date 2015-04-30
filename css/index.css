@@ -8,17 +8,17 @@
 
 body {
 	font-size: 100%;
-	color:#666;
-	background:#FFFFFF no-repeat;	
-/*    background-image:-webkit-gradient(radial, 50% 0, 150, 50% 0, 300, from(#C5E574), to(#cccccc));*/
+	background: #FFFFFF;	
 }
 
-h1 {
-	font-size: 3em;
-	font-weight: normal;
-	color: #424242;
+h1.banner {
+	/*font-family: "Lucida Sans Unicode";*/
+	font-family: "Helvetica";
+	font-size: 2.5em;
+	font-weight: lighter;
+	color: #585858;
 
-	margin-top: 10em;
+	margin-top: .8em;
 
 	text-align: center;
 }
@@ -31,4 +31,30 @@ h2 {
 	text-align: left;
 }
 
+p {
+	font-family: "Helvetica";
+	font-weight: lighter;
+	color: #585858;
+}
 
+p.breadcrumbs {
+	font-size: 1em;
+	font-weight: lighter;
+	color: #6E6E6E;
+
+	margin-left: .25em;
+	margin-top: .25em;
+}
+
+a.breadcrumbs {
+	text-decoration: none;
+}
+
+
+.footnote {
+	font-size: 1em;
+	font-weight: 200;
+	color: #6E6E6E;
+
+	text-align: center;
+}

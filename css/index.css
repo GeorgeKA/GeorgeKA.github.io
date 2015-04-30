@@ -1,7 +1,4 @@
-/*
-#id
-.class
-*/
+/* #id .class */
 
 * {
 	/* Universal CSS reset */
@@ -9,13 +6,13 @@
 	padding:0;
 }
 
-title {
+h1 {
 	color:#424242;
 	text-align: center;
 	font-weight: normal;
 }
 
-h1 {
+h2 {
 	color:#000000;
 	text-align: left;
 	font-weight: lighter;

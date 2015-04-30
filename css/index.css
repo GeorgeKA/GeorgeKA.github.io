@@ -2,26 +2,33 @@
 
 * {
 	/* Universal CSS reset */
-	margin:0;
-	padding:0;
-}
-
-h1 {
-	color:#424242;
-	text-align: center;
-	font-weight: normal;
-}
-
-h2 {
-	color:#000000;
-	text-align: left;
-	font-weight: lighter;
+	margin: 0;
+	padding: 0;
 }
 
 body {
-	font-size:14px;
+	font-size: 100%;
 	color:#666;
 	background:#FFFFFF no-repeat;	
 /*    background-image:-webkit-gradient(radial, 50% 0, 150, 50% 0, 300, from(#C5E574), to(#cccccc));*/
 }
+
+h1 {
+	font-size: 3em;
+	font-weight: normal;
+	color: #424242;
+
+	margin-top: 10em;
+
+	text-align: center;
+}
+
+h2 {
+	font-size: 2em;
+	font-weight: lighter;
+	color: #000000;
+
+	text-align: left;
+}
+
 

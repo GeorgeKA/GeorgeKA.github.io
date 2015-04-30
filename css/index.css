@@ -1,0 +1,30 @@
+/*
+#id
+.class
+*/
+
+* {
+	/* Universal CSS reset */
+	margin:0;
+	padding:0;
+}
+
+title {
+	color:#424242;
+	text-align: center;
+	font-weight: normal;
+}
+
+h1 {
+	color:#000000;
+	text-align: left;
+	font-weight: lighter;
+}
+
+body {
+	font-size:14px;
+	color:#666;
+	background:#FFFFFF no-repeat;	
+    background-image:-webkit-gradient(radial, 50% 0, 150, 50% 0, 300, from(#C5E574), to(#cccccc));
+}
+

@@ -2,165 +2,28 @@
 <html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/template.dwt" codeOutsideHTMLIsLocked="false" -->
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<!-- InstanceBeginEditable name="doctitle" -->
 <title>IGIS Template</title>
-<!-- InstanceEndEditable -->
-<!-- InstanceBeginEditable name="head" -->
-<!-- InstanceEndEditable -->
-{% load staticfiles %}
-<link href="{% static "tracker/css/index.css" %}" rel="stylesheet" type="text/css" />
-<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
 </head>
 
-<!--body style="background-color:pink"-->
-<body onload="init()">
-<p style="text-align:right; margin-right:5px; margin-top:5px;"><a href="http://127.0.0.1:8000/logout/"> Logout</a></p>
+<body>
 
 <h1>Indoor Geographic Information System</h1>
 <h2><a href="https://github.com/mtjandra/DreamTeam/">In partnership with RL Solutions</a></h2>
 
 
 <table width="100%" height="100%" >
-<!--Add the following for a border: border="1"-->
   <tr>
     <td width="10%">&nbsp;
     <div id="main">
 
-<ul id="navigationMenu">
-    <li>
-    {% load staticfiles %}
-	    <!--a class="home" href="../tracker/templates/tracker/index2"-->
-       <a class="home" href="../../tracker/index">
-            <span>Home</span>
-        </a>
-    </li>
-    
-    <li>
-    	<!--a class="ooiInfo" href="../tracker/templates/tracker/ooiInfo"-->
-        <a class="ooiInfo" href="../../tracker/ooiInfo">
-            <span>OOI Info</span>
-        </a>
-    </li>
-    
-    <li>
-	     <!--a class="mapping" href="../tracker/templates/tracker/mapping"-->
-         <a class="mapping" href="../../tracker/mapping">
-            <span>Mapping</span>
-         </a>
-    </li>
-    
-    <li>
-    	<!--a class="contactList" href="../tracker/templates/tracker/contactList"-->
-        <a class="contactList" href="../../tracker/contactList">
-            <span>Contact List</span>
-        </a>
-    </li>
-    
-    <li>
-    	<a class="contactUs" href="http://www.hc-sc.gc.ca/index-eng.php">
-            <span>  Contact us</span>
-		</a>
-    </li>
-</ul>
-</div>
-    </td>
-    <td width="90%">
-	<!-- InstanceBeginEditable name="EditRegion3" -->
-     <!--Content-->
-
     <table width="90%" height="100%" border="0" cellspacing="0">
-        <script src="{% static "tracker/js/pullData.js" %}"></script>
-        <tr>
-            <!-----MAP SECTION----->
-            <td class="GenContainer" id="mapCell" rowspan="7">
-                <p><button style="background-color:#E0E6F8" onclick="setInterval(function () {realTimeDisplay()}, 2500);"><pre><font size="3" face="verdana" > Display Map </font></pre></button></p>
-                <canvas id="mapCanvas">
-                    <script src="{% static "tracker/js/Mapping.js" %}"></script>
-                </canvas>
-            </td>
-            <td class="GenContainer" id="NewsHeader">
-                <p>Building Statistics</p>
-            </td>
-        </tr>
-        <tr>
-            <td class="GenContainer" id="InfectionHeader">
-                <p>C. difficile</p>
-            </td>
-        </tr>
-        <tr>
-            <!-----NEWS SECTION----->
-            <td class="GenContainer" id="NewsContainer">
-                <table>
-                    <td id="GenOoiInfo">
-                        <div class="NewsText" id="occupantCount"> </div>
-
-                        <div class="NewsText" id="physicianCount"> </div>
-                        <div class="NewsText" id="nurseCount"> </div>
-                        <div class="NewsText" id="patientCount"> </div>
-                        <div class="NewsText" id="visitorCount"> </div>
-                    </td>
-                    <td class="OtherNewsInfo">
-                        <div class="NewsText" id="infectedCount"> </div>
-                        <a href="#"><div class="NewsText" id="lowCount"> </div></a>
-                        <a href="#"><div class="NewsText" id="mediumCount"> </div></a>
-                        <a href="#"><div class="NewsText" id="highCount"> </div></a>
-                    </td>
-                    <td class="OtherNewsInfo" width="200px">
-                        <div class="NewsText" id="buildingHealth"> </div>
-                    </td>
-                    <script src="{% static "tracker/js/news.js" %}"></script>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <td class="GenContainer" id="InfectionHeader" style="border-top: 0px solid;">
-                <p>MRSA</p>
-            </td>
-        </tr>
-         <tr>
-            <!-----NEWS 2nd INFECTION----->
-            <td class="GenContainer" id="NewsContainer">
-                <table>
-                    <td class="OtherNewsInfo" style="padding-left: 10px;">
-                        <div class="NewsText" id="infectedCount2"> </div>
-                        <a href="#"><div class="NewsText" id="lowCount2"> </div></a>
-                        <a href="#"><div class="NewsText" id="mediumCount2"> </div></a>
-                        <a href="#"><div class="NewsText" id="highCount2"> </div></a>
-                    </td>
-                    <td class="OtherNewsInfo" width="200px">
-                        <div class="NewsText" id="buildingHealth2"> </div>
-                    </td>
-                    <script src="{% static "tracker/js/news.js" %}"></script>
-                </table>
-            </td>
-        </tr>
-        <tr>
-            <!-----ALARM SECTION----->
-            <td class="GenContainer" id="AlarmContainer">
-                <a href="#" ><div class="AlarmOutput" id="AlarmDiv"></div></a>
-                <a href="#" ><div class="AlarmOutput" id="AlarmDiv2"></div></a>
-                <script src="{% static "tracker/js/alarm.js" %}"></script>
-                <!--<div> <p> test</p></div>-->
-            </td>
-        </tr>
-        <tr>
-            <td class="GenContainer" id="AlarmOptions">
-                <a href="#"><p id="SetMaxAlrtText"><font color="#000000">Set maximum alerts</font></p></a>
-                <br>
-                <a href="#"><p id="SortByRiskText"><font color="#000000">Sort by risk level</font></p></a>
-                <br>
-                <a href="#"><p id="SortByRoleText"><font color="#000000">Sort by role</font></p></a>
-                <script src="{% static "tracker/js/alarm.js" %}"></script>
-            </td>
-        </tr>
     </table>
 
-    <!-- InstanceEndEditable --></td>
   </tr>
 </table>
 
-<p class="note">Knowledge is power.</p>
+<p>Knowledge is power.</p>
 
 </body>
-<!-- InstanceEnd --></html>
+</html>
 

@@ -8,12 +8,15 @@
 
 body {
 	font-size: 100%;
-	background: #FFFFFF;	
+	font-family: "Helvetica";
+	background: #FFFFFF;
+
+	/*background-image:-webkit-gradient(radial, 50% 0, 150, 50% 0, 300, from(#BDBDBD), to(#FFFFFF));
+    background-repeat: no-repeat;*/
 }
 
 h1.banner {
 	/*font-family: "Lucida Sans Unicode";*/
-	font-family: "Helvetica";
 	font-size: 2.5em;
 	font-weight: lighter;
 	color: #585858;
@@ -28,13 +31,25 @@ h2 {
 	font-weight: lighter;
 	color: #000000;
 
-	text-align: left;
+	text-align: center;
+}
+
+h3 {
+	font-weight: lighter;
+	font-size: 1.5em;
+
+	margin-top: .7em;
+	margin-left: .7em;
+	margin-bottom: .7em;
 }
 
 p {
-	font-family: "Helvetica";
 	font-weight: lighter;
 	color: #585858;
+}
+
+p.content {
+    text-align: center;
 }
 
 p.breadcrumbs {
@@ -46,10 +61,19 @@ p.breadcrumbs {
 	margin-top: .25em;
 }
 
+#emphasis {
+    font-size: 2em;
+}
+
 a.breadcrumbs {
 	text-decoration: none;
 }
 
+img.pageLink {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .footnote {
 	font-size: 1em;

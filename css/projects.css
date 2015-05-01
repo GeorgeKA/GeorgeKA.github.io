@@ -1,2 +1,5 @@
 /* #id .class */
 
+td.projectBlackberry {
+	width: 33%; /* Evenly space image cells */
+}

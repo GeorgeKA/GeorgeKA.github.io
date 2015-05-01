@@ -3,3 +3,11 @@
 td.projectBlackberry {
 	width: 33%; /* Evenly space image cells */
 }
+
+td.projectGIS {
+	width: 50%; /* Evenly space image cells */
+}
+
+#triumphLink {
+	color: #585858;
+}

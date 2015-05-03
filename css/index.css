@@ -84,6 +84,10 @@ a.noDecoration {
 	color: #585858;
 }
 
+a.lightDecoration {
+	color: #585858;
+}
+
 font.emphasis {
     font-size: 1.1em;
 	font-style: italic;
@@ -94,8 +98,10 @@ font.link{
 }
 
 ul {
-	font-size: 1em;
+	font-size: 1.2em;
+	font-weight: lighter;
 	color: #6E6E6E;
+	
 
 	margin-left: 2em;
 }
@@ -104,6 +110,10 @@ li {
 	margin-bottom: .5em;
 }
 
+li.centered {
+	text-align: center;
+	list-style-position: inside;
+}
 img.pageLink {
     display: block;
     margin-left: auto;

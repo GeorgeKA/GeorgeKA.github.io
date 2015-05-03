@@ -85,16 +85,13 @@ a.noDecoration {
 }
 
 a.lightDecoration {
-	color: #585858;
+	color: #0F17AA; /*#585858;*/
 }
 
 font.emphasis {
     font-size: 1.1em;
 	font-style: italic;
-}
-
-font.link{
-	color: #585858;
+	color: #090909; /*#131313;*/
 }
 
 ul {

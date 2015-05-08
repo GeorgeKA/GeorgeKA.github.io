@@ -10,20 +10,28 @@ body {
 	font-size: 100%;
 	font-family: "Helvetica";
 	background: #FFFFFF;
+    
+    width: 100%;
 
 	/*background-image:-webkit-gradient(radial, 50% 0, 150, 50% 0, 300, from(#BDBDBD), to(#FFFFFF));
     background-repeat: no-repeat;*/
 }
 
-h1.banner {
+h1.banner, h1.bannerCommon, h1.bannerHome {
 	/*font-family: "Lucida Sans Unicode";*/
 	font-size: 2.5em;
 	font-weight: lighter;
 	color: #585858;
 
-	margin-top: .8em;
-
 	text-align: center;
+}
+
+h1.bannerCommon {
+    margin-top: 0em;
+}
+
+h1.bannerHome {
+    margin-top: .8em;
 }
 
 h2 {
@@ -144,4 +152,18 @@ figcaption.examples {
 	color: #6E6E6E;
 
 	text-align: center;
+}
+
+div.head {
+    position: fixed;
+    margin: 0, auto, 0, auto;
+    z-index: 10;
+    width: inherit;
+    
+    background: #FFFFFF;
+}
+
+table.content {
+    position: absolute;
+    top: 120px;
 }

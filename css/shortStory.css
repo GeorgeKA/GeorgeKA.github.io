@@ -1,6 +1,6 @@
 body {
     font-size: 100%;
-    background: #fff;
+    background: #FF7519;
 /*    #E6E6E6*/
 }
 
@@ -60,7 +60,6 @@ section#contact {
 }
 
 /****HEADINGS****/
-/*Note "h1" is a container*/
 h1 {
     font-size: 3em;
     color: floralwhite;
@@ -99,6 +98,16 @@ section#education h2 {
     background-color: rgba(213, 213, 213, 0.5);
  }
 
+section#skills h2 {
+    top: 30%;
+    white-space: no-wrap;
+}
+
+div#hobbies h2, div#contact h2 {
+    position: static;
+    top: 0%;
+}
+
 /****IMAGES****/
 
 img#engLogo {
@@ -109,7 +118,17 @@ img#engLogo {
     width: 6em;
 }
 
-section#skills div#skills {    
+section#skills img{
+    display: inline-block;
+    margin: 0 2em 0 2em;
+}
+
+/****DIVS****/
+div {
+    background-color: rgba(213, 213, 213, 0.5);
+}
+
+section#skills div#skillsImgs {    
     position: absolute;
     top: 60%;
     min-width: 100%;
@@ -118,38 +137,23 @@ section#skills div#skills {
     text-align: center;
 }
 
-section#skills img{
-    display: inline-block;
-    margin: 0 2em 0 2em;
-}
-
-#icon-cPlusPlus {
-     
-}
-
-#icon-java {
-/*     left: 10em;*/
-}
-
-/****OTHER****/
-div {
-    background-color: rgba(213, 213, 213, 0.5);
-}
-
 div#hobbies {
     background-color: rgba(213, 213, 213, 0.8);
     
     position: absolute;
-    top: 50%;
+    top: 40%;
     min-width: 100%;
-    min-height: 7em;
 }
 
-div#hobbies h2 {
+div#contact {
+    background-color: rgba(213, 213, 213, 0.5);
+    
     position: absolute;
-    top: 0%;
+    top: 40%;
+    min-width: 100%;
 }
 
+/****OTHER****/
 div#hobbies a {
     color: coral;
     text-decoration: none;

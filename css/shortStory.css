@@ -76,6 +76,15 @@ section#intro h1 {
     font-size: 3em;
 }
 
+h1.animate {    
+    transition: color .5s;   
+    -webkit-transition: color .5s;
+}
+
+h1.animate:hover {
+    color: firebrick;
+}
+
 h2 {
     color: azure;   
     
@@ -116,11 +125,24 @@ img#engLogo {
     top: 70%; 
     left: 45%;
     width: 6em;
+    
+    transition: width .5s;
 }
 
-section#skills img{
+img#engLogo:hover {
+    width: 8em;
+}
+
+section#skills img {
     display: inline-block;
     margin: 0 2em 0 2em;
+    
+    transition: margin .5s;
+    -webkit-transition: margin .5s;
+}
+
+section#skills img:hover {
+    margin: 0 4em 0 4em;
 }
 
 /****DIVS****/

@@ -175,7 +175,7 @@ div#contact {
     min-width: 100%;
 }
 
-/****OTHER****/
+/****LINKS****/
 div#hobbies a {
     color: coral;
     text-decoration: none;
@@ -186,6 +186,16 @@ section#contact a {
     text-decoration: none;
 }
 
+span.animate {
+    transition: color .5s;
+    -webkit-transition: color .5s;
+}
+
+span.animate:hover {
+    color: firebrick;
+}
+
+/****OTHER****/
 #introWrapper p {
     font-family:  Monaco, Menlo, Consolas, "Courier New", monospace;
     text-shadow: 2px 2px #000;

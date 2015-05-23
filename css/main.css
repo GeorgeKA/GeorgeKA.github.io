@@ -176,3 +176,12 @@ table.content {
     position: absolute;
     top: 120px;
 }
+
+span#shortStory {
+    transition: color .5s;
+    -webkit-transition: color .5s;
+}
+
+span#shortStory:hover {
+    color: firebrick;
+}

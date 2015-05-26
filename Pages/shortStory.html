@@ -5,6 +5,7 @@
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>    
 <link rel="stylesheet" type="text/css" href="../css/shortStory.css">
 <link rel="stylesheet" type="text/css" href="../css/skills-sprite.css">
+<link rel="stylesheet" type="text/css" href="../css/animate.css">
 
 <title>This is GEORGE</title>    
     
@@ -12,25 +13,29 @@
     
 <body>
 
+<script src="../js/wow.js"></script>
+<script>
+    new WOW().init();
+</script>
+
 <div id="introWrapper">
-    <a href="../index.html"><p><span class="animate">Go back</span></p></a>
+    <a href="../index.html"><p><span class="transition">Go back</span></p></a>
     <section id="intro">
-        
         <h1>In a nutshell...</h1>
         <h2>I am an engineering graduate, developer, athlete, and friend.</h2>        
     </section>
 </div>
     
 <section id="education" data-type="background" data-scroll-speed="10">
-    <a href="skills.html"><h1 class="animate">Higher Education</h1></a>
+    <a href="skills.html"><h1 class="wow slideInRight transition">Higher Education</h1></a>
     <h2 style="display: inline-block;">By the end of April 2015 I earned a degree in <br><i>Mechatronics Engineering</i> from McMaster University.</h2>
-    <img src="../images/Skills/engLogo.png" alt="McMaster Mechatronics Logo" id="engLogo"\>    
+    <img src="../images/Skills/engLogo.png" alt="McMaster Mechatronics Logo" id="engLogo" class="wow slideInRight"\>
 </section>    
         
 <section id="skills" data-type="background" data-scroll-speed="10">
-    <a href="skills.html"><h1 class="animate">Tech Skills</h1></a>
+    <a href="skills.html"><h1 class="wow slideInLeft transition">Tech Skills</h1></a>
     <h2>After 4 years of undergrad and working full time at <i>Blackberry</i>, I've learned a thing or two...</h2>  
-    <div id="skillsImgs">
+    <div id="skillsImgs" class="wow slideInLeft">
         <img src="../images/img_trans.gif" alt="C++ Logo" id="icon-cPlusPlus">
         <img src="../images/img_trans.gif" alt="Java Logo" id="icon-java">
         <img src="../images/img_trans.gif" alt="HTML CSS Javascript Logo" id="icon-html-css-jv">
@@ -43,27 +48,26 @@
 </section>  
     
 <section id="hobbies" data-type="background" data-scroll-speed="10">
-    <a href="hobbies.html"><h1 class="animate">Hobbies</h1></a>
-    <div id="hobbies"><h2>Atheletics by way of <a href="http://bodyspace.bodybuilding.com/progress-photos/kgreazy"><span class="animate">personal fitness</span></a> and team sports have always been a part of my life.<br>
-        Hopefully as head coach of <a href="http://www.mcmasterdragonboat.ca/"><span class="animate">McMaster University's dragon boat team</span></a>, we'll bring home even more success this season.
+    <a href="hobbies.html"><h1 class="wow slideInRight transition">Hobbies</h1></a>
+    <div id="hobbies"><h2>Atheletics by way of <a href="http://bodyspace.bodybuilding.com/progress-photos/kgreazy"><span class="transition">personal fitness</span></a> and team sports have always been a part of my life.<br>
+        Hopefully as head coach of <a href="http://www.mcmasterdragonboat.ca/"><span class="transition">McMaster University's dragon boat team</span></a>, we'll bring home even more success this season.
     </h2></div>
 </section>  
     
 <section id="life" data-type="background" data-scroll-speed="10">
-    <a href="life.html"><h1 class="animate">Early Life</h1></a>
+    <a href="life.html"><h1 class="wow slideInLeft transition">Early Life</h1></a>
     <h2>I grew up in Markham Ontario, where I became fluent in french, starting at Franklin Street Public School, and finishing up at Pierre Elliott Trudeau High School.<br><br>
         Music was a big part of my life, including learning to play the violin, flute, and piccolo.
     </h2>
 </section>  
     
 <section id="contact" data-type="background" data-scroll-speed="30">
-    <a href="contact.html"><h1 class="animate">Contact Me</h1></a>
-    <div id="contact"><h2>Don't be shy :) Shoot me email at <a href="mailto:gkasante@egmail.com?Subject=Enquiry%20-%20GeorgeKA"><span class="animate">gkasante@gmail.com</span></a>...<br><br>
-        ...or check out my <a href="https://www.linkedin.com/pub/george-koranteng-asante/25/417/894"><span class="animate">LinkedIn</span></a> page.
+    <a href="contact.html"><h1 class="wow slideInRight transition">Contact Me</h1></a>
+    <div id="contact"><h2>Don't be shy :) Shoot me email at <a href="mailto:gkasante@egmail.com?Subject=Enquiry%20-%20GeorgeKA"><span class="transition">gkasante@gmail.com</span></a>...<br><br>
+        ...or check out my <a href="https://www.linkedin.com/pub/george-koranteng-asante/25/417/894"><span class="transition">LinkedIn</span></a> page.
     </h2></div>
 </section>  
 
-        
 <script src="../js/parallax.js"></script>
 
 </body>

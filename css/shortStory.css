@@ -78,14 +78,25 @@ section#intro h1 {
     font-size: 3em;
 }
 
-h1.animate {    
+h1.transition {
     transition: color .5s;   
     -webkit-transition: color .5s;
+
+/*    animation: animate1 1s;*/
 }
 
-h1.animate:hover {
+h1.transition:hover {
     color: firebrick;
 }
+
+/*@keyframes animate1 {
+    from {
+        margin-top: 100%;
+    }
+    to {
+        margin-top: 00%;
+    }
+}*/
 
 h2 {
     color: azure;   
@@ -129,6 +140,7 @@ img#engLogo {
     width: 6em;
     
     transition: width .5s;
+    -webkit-transition: width .5s;
 }
 
 img#engLogo:hover {
@@ -188,16 +200,16 @@ section#contact a {
     text-decoration: none;
 }
 
-span.animate {
+/****OTHER****/
+span.transition {
     transition: color .5s;
     -webkit-transition: color .5s;
 }
 
-span.animate:hover {
+span.transition:hover {
     color: firebrick;
 }
 
-/****OTHER****/
 #introWrapper p {
     font-family:  Monaco, Menlo, Consolas, "Courier New", monospace;
     text-shadow: 2px 2px #000;

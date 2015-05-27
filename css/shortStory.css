@@ -82,7 +82,6 @@ section#intro h1 {
 h1.transition {
     transition: color .5s;   
     -webkit-transition: color .5s;
-    -ms-transition: color .5s;
 }
 
 h1.transition:hover {
@@ -152,7 +151,6 @@ img#engLogo {
     
     transition: width .5s;
     -webkit-transition: width .5s;
-    -ms-transition: width .5s;
 }
 
 img#engLogo:hover {
@@ -165,7 +163,6 @@ section#skills img {
     
     transition: margin .5s;
     -webkit-transition: margin .5s;
-    -ms-transition: margin .5s;
 }
 
 section#skills img:hover {
@@ -214,6 +211,9 @@ div#loadingDiv {    /****LOADING SCREEN****/
 div.loaded {    /****LOADING SCREEN****/
     animation: slideLoadingScreen .5s;
     animation-fill-mode: forwards;
+
+    -webkit-animation: slideLoadingScreen .5s;
+    -webkit-animation-fill-mode: forwards;
 }
 
 @keyframes slideLoadingScreen { /****LOADING SCREEN****/
@@ -241,7 +241,6 @@ section#contact a {
 span.transition {
     transition: color .5s;
     -webkit-transition: color .5s;
-    -ms-transition: color .5s;
 }
 
 span.transition:hover {
@@ -267,6 +266,10 @@ span.loadingColourToggle {    /****LOADING SCREEN****/
     animation: colourChange .5s;
     animation-direction: alternate;
     animation-iteration-count: infinite;
+
+    -webkit-animation: colourChange .5s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
 }
 
 @keyframes colourChange {

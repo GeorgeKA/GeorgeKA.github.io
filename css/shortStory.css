@@ -106,7 +106,7 @@ section#education h2 {
     color: #E5E5E5;
 /*    color: #D5D5D5;*/
     font-size: 2em;
-    background-color: rgba(213, 213, 213, 0.5);
+    background-color: rgba(213, 213, 213, 0.4);
  }
 
 section#skills h2 {
@@ -122,6 +122,7 @@ div#hobbies h2, div#contact h2 {
 h2#loadingMesssage {    /****LOADING SCREEN****/
     color: firebrick;
     font-size: 4em;
+    font-family: sans-serif;
 
     position: absolute;
     top: 40%;

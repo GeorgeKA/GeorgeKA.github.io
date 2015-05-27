@@ -81,7 +81,6 @@ section#intro h1 {
 
 h1.transition {
     transition: color .5s;   
-    -webkit-transition: color .5s;
 }
 
 h1.transition:hover {
@@ -124,13 +123,24 @@ h2#loadingMesssage {    /****LOADING SCREEN****/
     color: firebrick;
     font-size: 4em;
 
+    position: absolute;
+    top: 40%;
     text-align: center;
+    height: 100%;
     width: 100%;
 
     animation: slideIn .5s;
     -webkit-animation: slideIn .5s;
 }
 
+@-webkit-keyframes slideIn {
+    from {
+        margin-left: 100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
 @keyframes slideIn {    /****LOADING SCREEN****/
     from {
         margin-left: 100%;
@@ -150,7 +160,6 @@ img#engLogo {
     width: 6em;
     
     transition: width .5s;
-    -webkit-transition: width .5s;
 }
 
 img#engLogo:hover {
@@ -162,7 +171,6 @@ section#skills img {
     margin: 0 2em 0 2em;
     
     transition: margin .5s;
-    -webkit-transition: margin .5s;
 }
 
 section#skills img:hover {
@@ -216,6 +224,15 @@ div.loaded {    /****LOADING SCREEN****/
     -webkit-animation-fill-mode: forwards;
 }
 
+@-webkit-keyframes slideLoadingScreen { /****LOADING SCREEN****/
+    from{
+        margin-top: 0%;
+    }
+    to{
+        margin-top: 100%;
+        opacity: 0;
+    }
+}
 @keyframes slideLoadingScreen { /****LOADING SCREEN****/
     from{
         margin-top: 0%;
@@ -240,7 +257,6 @@ section#contact a {
 /****OTHER****/
 span.transition {
     transition: color .5s;
-    -webkit-transition: color .5s;
 }
 
 span.transition:hover {
@@ -272,6 +288,11 @@ span.loadingColourToggle {    /****LOADING SCREEN****/
     -webkit-animation-iteration-count: infinite;
 }
 
+@-webkit-keyframes colourChange {
+    to{
+        color: darksalmon;
+    }
+}
 @keyframes colourChange {
     to{
         color: darksalmon;

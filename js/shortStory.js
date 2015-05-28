@@ -1,8 +1,9 @@
-$(document).ready(function() {
+$(window).load(function() { // On page ready
+//$(document).ready(function() {    // On page DOM ready
     // Move away loading screen
     setTimeout(function(){
          document.getElementById('loadingDiv').classList.add("loaded");
-    }, 3000);
+    }, 2500);
     
     // Add effects to the loading screen
     setInterval(function(){

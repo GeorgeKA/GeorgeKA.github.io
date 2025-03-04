@@ -201,7 +201,8 @@ div {
 section#skills div#skillsImgs {    
     position: absolute;
     top: 60%;
-    min-width: 100%;
+    /* Setting min-width to to 100% causes the entire body's width to shrink slightly on mobile. Unclear why */
+    /*min-width: 100%;*/
     
     padding: 0 3em 0 3em;
     text-align: center;
